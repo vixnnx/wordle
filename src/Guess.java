@@ -1,5 +1,5 @@
 public class Guess extends Word{
-    private int guesses;
+    private static int guesses;
     private Word ans;
 
     public Guess(String word, Word answer) {
@@ -11,6 +11,7 @@ public class Guess extends Word{
         checkL3();
         checkL4();
         checkL5();
+        Board.addWord(guesses, color());
     }
 
 
@@ -27,13 +28,10 @@ public class Guess extends Word{
         l.setColor("Yellow");
     }
 
-    public void makeGray(Letter l) {
-        l.setColor("Gray");
+    public void makeRed(Letter l) {
+        l.setColor("Red");
     }
 
-    public int getGuesses() {
-        return guesses;
-    }
 
 
 
@@ -47,7 +45,7 @@ public class Guess extends Word{
                     (getL1Value().equals(ans.getL5Value()))) {
                 makeYellow(getL1());
         } else {
-            makeGray(getL1());
+            makeRed(getL1());
         }
     }
 
@@ -60,7 +58,7 @@ public class Guess extends Word{
                 (getL2Value().equals(ans.getL5Value()))) {
             makeYellow(getL2());
         } else {
-            makeGray(getL2());
+            makeRed(getL2());
         }
     }
 
@@ -73,19 +71,19 @@ public class Guess extends Word{
                 (getL3Value().equals(ans.getL5Value()))) {
             makeYellow(getL3());
         } else {
-            makeGray(getL3());
+            makeRed(getL3());
         }
     }
     public void checkL4(){
         if (getL4Value().equals(ans.getL4Value())) {
-            makeGreen(getL1());
+            makeGreen(getL4());
         } else if (getL4Value().equals(ans.getL2Value()) ||
                 (getL4Value().equals(ans.getL3Value())) ||
                 (getL4Value().equals(ans.getL1Value())) ||
                 (getL4Value().equals(ans.getL5Value()))) {
             makeYellow(getL4());
         } else {
-            makeGray(getL4());
+            makeRed(getL4());
         }
     }
     public void checkL5(){
@@ -97,7 +95,17 @@ public class Guess extends Word{
                 (getL5Value().equals(ans.getL1Value()))) {
             makeYellow(getL5());
         } else {
-            makeGray(getL5());
+            makeRed(getL5());
         }
+    }
+
+    public static int getGuesses() {
+        return guesses;
+    }
+
+
+    @Override
+    public String getWord() {
+        return ;
     }
 }

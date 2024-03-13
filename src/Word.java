@@ -59,6 +59,7 @@ public class Word {
     }
 
 
+    @Override
     public String getWord() {
         return word;
     }
