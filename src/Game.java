@@ -1,7 +1,7 @@
 import java.util.*;
 public class Game {
 
-    private static String[] WORDLIST = {"worry", "sorry", "watch", "catch", "paper", "daily",
+    private final String[] WORDLIST = {"worry", "sorry", "watch", "catch", "paper", "daily",
             "devil", "tires", "mouse", "house", "foyer", "mummy", "trite", "coyly", "codes"};
 
 
@@ -16,7 +16,7 @@ public class Game {
     }
 
 
-    //while (answer.getWord != guess.getWord();
+    //while (answer.getWord != guessedWord.getWord() //keep using the same varible but update the word// && Guess.getGuesses
 }
 
 

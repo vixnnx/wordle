@@ -1,5 +1,5 @@
 public class Guess extends Word{
-    private int guesses;
+    private static int guesses;
     private Word ans;
 
     public Guess(String word, Word answer) {
@@ -31,7 +31,7 @@ public class Guess extends Word{
         l.setColor("Gray");
     }
 
-    public int getGuesses() {
+    public static int getGuesses() {
         return guesses;
     }
 
