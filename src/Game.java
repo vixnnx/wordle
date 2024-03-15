@@ -37,6 +37,7 @@ public class Game {
         words.add(guessedWord);
         while (!answer.getWord().equals(guessedWord.getWord()) && Guess.getGuesses() != 6) {
             Board.printBoard();
+            System.out.println();
             System.out.print("Enter your next guess: ");
             guess = scan.nextLine().toLowerCase();
             guessedWord = new Guess(guess, answer);
@@ -49,7 +50,7 @@ public class Game {
         } else {
             System.out.println("Try again next time!");
         }
-
+        System.out.println();
         System.out.println("All of the words used in this round: ");;
         for (Word w: words) {
             System.out.println(w.toBeListed());
