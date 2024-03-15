@@ -67,5 +67,4 @@ public class Word {
         return ConsoleUtility.CYAN + "The answer was " + word + ConsoleUtility.RESET;
     }
 
-
 }
