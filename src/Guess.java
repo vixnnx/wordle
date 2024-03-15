@@ -1,4 +1,4 @@
-public class Guess extends Word{
+public class Guess extends Word {
     private static int guesses;
     private Word ans;
 
@@ -33,23 +33,20 @@ public class Guess extends Word{
     }
 
 
-
-
-
-    public void checkL1(){
+    public void checkL1() {
         if (getL1Value().equals(ans.getL1Value())) {
             makeGreen(getL1());
         } else if (getL1Value().equals(ans.getL2Value()) ||
-                    (getL1Value().equals(ans.getL3Value())) ||
-                    (getL1Value().equals(ans.getL4Value())) ||
-                    (getL1Value().equals(ans.getL5Value()))) {
-                makeYellow(getL1());
+                (getL1Value().equals(ans.getL3Value())) ||
+                (getL1Value().equals(ans.getL4Value())) ||
+                (getL1Value().equals(ans.getL5Value()))) {
+            makeYellow(getL1());
         } else {
             makeRed(getL1());
         }
     }
 
-    public void checkL2(){
+    public void checkL2() {
         if (getL2Value().equals(ans.getL2Value())) {
             makeGreen(getL2());
         } else if (getL2Value().equals(ans.getL1Value()) ||
@@ -62,7 +59,7 @@ public class Guess extends Word{
         }
     }
 
-    public void checkL3(){
+    public void checkL3() {
         if (getL3Value().equals(ans.getL3Value())) {
             makeGreen(getL3());
         } else if (getL3Value().equals(ans.getL2Value()) ||
@@ -74,7 +71,8 @@ public class Guess extends Word{
             makeRed(getL3());
         }
     }
-    public void checkL4(){
+
+    public void checkL4() {
         if (getL4Value().equals(ans.getL4Value())) {
             makeGreen(getL4());
         } else if (getL4Value().equals(ans.getL2Value()) ||
@@ -86,7 +84,8 @@ public class Guess extends Word{
             makeRed(getL4());
         }
     }
-    public void checkL5(){
+
+    public void checkL5() {
         if (getL5Value().equals(ans.getL5Value())) {
             makeGreen(getL5());
         } else if (getL5Value().equals(ans.getL2Value()) ||
@@ -103,9 +102,15 @@ public class Guess extends Word{
         return guesses;
     }
 
-
     @Override
-    public String getWord() {
-        return ;
+    public String toBeListed() {
+        return ConsoleUtility.BLUE + "You guessed " + getWord() + ConsoleUtility.RESET;
     }
+
+
+
+
 }
+
+
+

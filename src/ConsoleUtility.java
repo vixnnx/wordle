@@ -7,6 +7,6 @@ public class ConsoleUtility {
     public static final String BLUE = "\033[0;34m";    // BLUE
     public static final String PURPLE = "\033[0;35m";  // PURPLE
     public static final String CYAN = "\033[0;36m";    // CYAN
-    public static final String WHITE = "\033[0;37m";   // WHITE
+
 
 }

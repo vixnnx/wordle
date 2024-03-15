@@ -58,10 +58,13 @@ public class Word {
         return l5.getValue();
     }
 
-
-    @Override
     public String getWord() {
         return word;
+    }
+
+
+    public String toBeListed() {
+        return ConsoleUtility.CYAN + "The answer was " + word + ConsoleUtility.RESET;
     }
 
 
