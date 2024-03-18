@@ -64,6 +64,7 @@ public class Word {
 
 
     public String toBeListed() {
+
         return ConsoleUtility.CYAN + "The answer was " + word + ConsoleUtility.RESET;
     }
 

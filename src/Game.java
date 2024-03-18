@@ -51,7 +51,7 @@ public class Game {
             System.out.println("Try again next time!");
         }
         System.out.println();
-        System.out.println("All of the words used in this round: ");;
+        System.out.println("All of the words used in this round: ");
         for (Word w: words) {
             System.out.println(w.toBeListed());
         }

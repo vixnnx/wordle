@@ -104,6 +104,7 @@ public class Guess extends Word {
 
     @Override
     public String toBeListed() {
+
         return ConsoleUtility.BLUE + "You guessed " + getWord() + ConsoleUtility.RESET;
     }
 
