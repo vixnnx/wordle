@@ -5,10 +5,6 @@ public class Game {
 
     private ArrayList<String> wordlist = new ArrayList<>();
 
-
-    // Board.addWord(guess.getguesses(), guess.colors())
-
-    // guess(input, answer)
     private Word answer;
     private Scanner scan;
     private String guess;
@@ -27,10 +23,12 @@ public class Game {
 
 
     public void start() {
+        //main menus
         System.out.println("Welcome to wordle!");
         System.out.println(ConsoleUtility.PURPLE + "RED: letter is not in the word");
         System.out.println("YELLOW: letter is in the word, but wrong spot");
         System.out.println("GREEN: letter is in the word and in the right spot" + ConsoleUtility.RESET);
+        //rounds
         System.out.print("Enter your first guess: ");
         guess = scan.nextLine().toLowerCase();
         guessedWord = new Guess(guess, answer);
@@ -38,6 +36,7 @@ public class Game {
         while (!answer.getWord().equals(guessedWord.getWord()) && Guess.getGuesses() != 6) {
             Board.printBoard();
             System.out.println();
+            //user inputs all their guesses
             System.out.print("Enter your next guess: ");
             guess = scan.nextLine().toLowerCase();
             guessedWord = new Guess(guess, answer);
@@ -45,6 +44,7 @@ public class Game {
         }
         Board.printBoard();
         System.out.println();
+        //prints at the end of the round
         if (answer.getWord().equals(guessedWord.getWord())) {
             System.out.println("You got it in " + Guess.getGuesses());
         } else {
@@ -59,7 +59,7 @@ public class Game {
     }
 
 
-
+//adds words to ArrayList
     private void readData() {
         try {
             File myFile = new File("src//wordlewords.txt");

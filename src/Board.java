@@ -12,6 +12,7 @@ public class Board {
 
     }
 
+    //prints the board
     public static void printBoard() {
         for (String[] row: grid) {
             for (String r: row) {
@@ -21,6 +22,7 @@ public class Board {
         }
     }
 
+    //adds word to the next blank line
     public static void addWord(int guess, Letter[] letters) {
         int g = guess - 1;
         for (int i = 0; i < letters.length; i++) {

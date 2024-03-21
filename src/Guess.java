@@ -20,6 +20,8 @@ public class Guess extends Word {
         return letters;
     }
 
+
+    //sets the color of each letter in the guessed word
     public void makeGreen(Letter l) {
         l.setColor("Green");
     }
@@ -32,7 +34,7 @@ public class Guess extends Word {
         l.setColor("Red");
     }
 
-
+//checks each letter in the guessed word
     public void checkL1() {
         if (getL1Value().equals(ans.getL1Value())) {
             makeGreen(getL1());

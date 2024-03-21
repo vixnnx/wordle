@@ -16,7 +16,7 @@ public class Word {
         l5 = new Letter(w.substring(4,5));
     }
 
-
+//returns the letter
     public Letter getL1() {
         return l1;
     }
@@ -37,7 +37,7 @@ public class Word {
         return l5;
     }
 
-
+//returns value of the letter
     public String getL1Value() {
         return l1.getValue();
     }
