@@ -6,11 +6,7 @@ public class Board {
                                 {"_","_","_","_","_"},
                                 {"_","_","_","_","_"},
                                 {"_","_","_","_","_"}};
-
-
-    public Board() {
-
-    }
+    public Board() {}
 
     //prints the board
     public static void printBoard() {
@@ -35,8 +31,5 @@ public class Board {
             }
         }
     }
-
-
-
 
 }

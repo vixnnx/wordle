@@ -36,12 +36,12 @@ public class Guess extends Word {
 
 //checks each letter in the guessed word
     public void checkL1() {
-        if (getL1Value().equals(ans.getL1Value())) {
+        if (getL1().getValue().equals(ans.getL1().getValue())) {
             makeGreen(getL1());
-        } else if (getL1Value().equals(ans.getL2Value()) ||
-                (getL1Value().equals(ans.getL3Value())) ||
-                (getL1Value().equals(ans.getL4Value())) ||
-                (getL1Value().equals(ans.getL5Value()))) {
+        } else if (getL1().getValue().equals(ans.getL2().getValue()) ||
+                (getL1().getValue().equals(ans.getL3().getValue())) ||
+                (getL1().getValue().equals(ans.getL4().getValue())) ||
+                (getL1().getValue().equals(ans.getL5().getValue()))) {
             makeYellow(getL1());
         } else {
             makeRed(getL1());
@@ -49,12 +49,12 @@ public class Guess extends Word {
     }
 
     public void checkL2() {
-        if (getL2Value().equals(ans.getL2Value())) {
+        if (getL2().getValue().equals(ans.getL2().getValue())) {
             makeGreen(getL2());
-        } else if (getL2Value().equals(ans.getL1Value()) ||
-                (getL2Value().equals(ans.getL3Value())) ||
-                (getL2Value().equals(ans.getL4Value())) ||
-                (getL2Value().equals(ans.getL5Value()))) {
+        } else if (getL2().getValue().equals(ans.getL1().getValue()) ||
+                (getL2().getValue().equals(ans.getL3().getValue())) ||
+                (getL2().getValue().equals(ans.getL4().getValue())) ||
+                (getL2().getValue().equals(ans.getL5().getValue()))) {
             makeYellow(getL2());
         } else {
             makeRed(getL2());
@@ -62,12 +62,12 @@ public class Guess extends Word {
     }
 
     public void checkL3() {
-        if (getL3Value().equals(ans.getL3Value())) {
+        if (getL3().getValue().equals(ans.getL3().getValue())) {
             makeGreen(getL3());
-        } else if (getL3Value().equals(ans.getL2Value()) ||
-                (getL3Value().equals(ans.getL1Value())) ||
-                (getL3Value().equals(ans.getL4Value())) ||
-                (getL3Value().equals(ans.getL5Value()))) {
+        } else if (getL3().getValue().equals(ans.getL2().getValue()) ||
+                (getL3().getValue().equals(ans.getL1().getValue())) ||
+                (getL3().getValue().equals(ans.getL4().getValue())) ||
+                (getL3().getValue().equals(ans.getL5().getValue()))) {
             makeYellow(getL3());
         } else {
             makeRed(getL3());
@@ -75,12 +75,12 @@ public class Guess extends Word {
     }
 
     public void checkL4() {
-        if (getL4Value().equals(ans.getL4Value())) {
+        if (getL4().getValue().equals(ans.getL4().getValue())) {
             makeGreen(getL4());
-        } else if (getL4Value().equals(ans.getL2Value()) ||
-                (getL4Value().equals(ans.getL3Value())) ||
-                (getL4Value().equals(ans.getL1Value())) ||
-                (getL4Value().equals(ans.getL5Value()))) {
+        } else if (getL4().getValue().equals(ans.getL2().getValue()) ||
+                (getL4().getValue().equals(ans.getL3().getValue())) ||
+                (getL4().getValue().equals(ans.getL1().getValue())) ||
+                (getL4().getValue().equals(ans.getL5().getValue()))) {
             makeYellow(getL4());
         } else {
             makeRed(getL4());
@@ -88,12 +88,12 @@ public class Guess extends Word {
     }
 
     public void checkL5() {
-        if (getL5Value().equals(ans.getL5Value())) {
+        if (getL5().getValue().equals(ans.getL5().getValue())) {
             makeGreen(getL5());
-        } else if (getL5Value().equals(ans.getL2Value()) ||
-                (getL5Value().equals(ans.getL3Value())) ||
-                (getL5Value().equals(ans.getL4Value())) ||
-                (getL5Value().equals(ans.getL1Value()))) {
+        } else if (getL5().getValue().equals(ans.getL2().getValue()) ||
+                (getL5().getValue().equals(ans.getL3().getValue())) ||
+                (getL5().getValue().equals(ans.getL4().getValue())) ||
+                (getL5().getValue().equals(ans.getL1().getValue()))) {
             makeYellow(getL5());
         } else {
             makeRed(getL5());

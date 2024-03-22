@@ -37,27 +37,6 @@ public class Word {
         return l5;
     }
 
-//returns value of the letter
-    public String getL1Value() {
-        return l1.getValue();
-    }
-
-    public String getL2Value() {
-        return l2.getValue();
-    }
-
-    public String getL3Value() {
-        return l3.getValue();
-    }
-
-    public String getL4Value() {
-        return l4.getValue();
-    }
-
-    public String getL5Value() {
-        return l5.getValue();
-    }
-
     public String getWord() {
         return word;
     }
